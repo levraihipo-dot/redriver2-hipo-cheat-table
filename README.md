@@ -41,7 +41,7 @@ Cheat Engine is required to load and use this table.
 ## ✨ Features — v1.0.0
 
 ### 🚗 All Vehicles Are Police Cars
-Every vehicle in the game is replaced by a police car. Maximum chaos, maximum fun.
+Every vehicle in the game is replaced by a police ai. Maximum chaos, maximum fun.
 
 ---
 
