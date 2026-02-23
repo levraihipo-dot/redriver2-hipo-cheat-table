@@ -1,4 +1,4 @@
-# 🚔 Redriver 2 — Cheat Table v1.0.0
+# 🚔 Redriver 2 — Cheat Table v1.1.0
 
 > **A Cheat Engine table for Redriver 2, focused on police behavior, difficulty, and vehicle mechanics.**
 
@@ -38,10 +38,24 @@ Cheat Engine is required to load and use this table.
 
 ---
 
-## ✨ Features — v1.0.0
+## ✨ Features — v1.1.0
 
 ### 🚗 All Vehicles Are Police Cars
-Every vehicle in the game is replaced by a police ai. Maximum chaos, maximum fun.
+Every vehicle in the game is replaced by a police AI. Maximum chaos, maximum fun.
+
+Now with a **Vehicle Count** field — set a value between 0 and 18 to control exactly how many vehicles are affected. Timer and stability issues from v1.0.0 have been fixed.
+
+---
+
+### 🚔 Be a Cop *(New in v1.1.0)*
+Take on the role of a police officer. Based on MrSam's cheat table code, this script includes a heavily modified version of "Pursuers Can Target Anyone":
+
+- No need to honk anymore — just hitting a vehicle triggers a pursuit
+- Works with all vehicle types except police (civilians and parked vehicles included); previously only moving vehicles were supported
+- Vehicles with 20,000+ damage cannot be targeted for pursuit
+- The player no longer needs to be in a police vehicle to trigger and conduct pursuits
+- Non-police vehicles with police AI (marked as Patrolling) can also join pursuits — combine with **🚗 All Vehicles Are Police Cars** to enable them
+- Player physics are replaced with police physics, and more
 
 ---
 
@@ -83,11 +97,15 @@ Spawn your vehicle as a police car with full police physics applied:
 ## 🙏 Credits
 
 - **MrSam & contributors** (SoapyMan, Fireboyd78, 50thomatoes50, andre-vm, Rosalie241, Faalagorn, alotlikebeans) — For the original Redriver2 project and cheat table. Portions of MrSam's work were reused in this table. Huge thanks. [OpenDriver2/REDRIVER2](https://github.com/OpenDriver2/REDRIVER2)
-- **Compatible build** available here : [redriver2-hipo-build](https://github.com/levraihipo-dot/redriver2-hipo-build)
+- **Compatible build** available here: [redriver2-hipo-build](https://github.com/levraihipo-dot/redriver2-hipo-build)
 
 ---
 
 ## 📜 Changelog
+
+### v1.1.0
+- **New: Be a Cop mode** — Take the role of a police officer with a heavily modified pursuit system (based on MrSam's code). Supports all vehicle types, damage thresholds, no horn required, police physics for the player, and compatibility with All Vehicles Are Police Cars
+- **Updated: All Vehicles Are Police Cars** — Fixed timer duplication bug that caused crashes; script restructured for clarity; added **Vehicle Count** variable field (0–18) to control how many vehicles are affected
 
 ### v1.0.0
 - Initial release
