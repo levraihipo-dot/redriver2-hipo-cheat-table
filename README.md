@@ -19,7 +19,7 @@
 
 This cheat table is only compatible with the **latest up-to-date version of Redriver 2**, built via [Appveyor](https://ci.appveyor.com), using **MrSam's `.exe`**.
 
-> 📥 **Download the compatible version here:** [LINK TO YOUR REPO — À REMPLACER]
+> 📥 **Download the compatible version here:** [redriver2-recommanded-build](https://github.com/levraihipo-dot/redriver2-hipo-build)
 
 Using an older or different build will likely cause the table to not work or behave unexpectedly.
 
@@ -82,7 +82,8 @@ Spawn your vehicle as a police car with full police physics applied:
 
 ## 🙏 Credits
 
-- **MrSam** — For the original Redriver 2 cheat table and the Redriver 2 project itself. Portions of his work were reused in this table. Huge thanks. [LIEN VERS SON TRAVAIL — À REMPLACER]
+- **MrSam & contributors** (SoapyMan, Fireboyd78, 50thomatoes50, andre-vm, Rosalie241, Faalagorn, alotlikebeans) — For the original Redriver2 project and cheat table. Portions of MrSam's work were reused in this table. Huge thanks. [OpenDriver2/REDRIVER2](https://github.com/OpenDriver2/REDRIVER2)
+- **Compatible build** available here : [redriver2-hipo-build](https://github.com/levraihipo-dot/redriver2-hipo-build)
 
 ---
 
