@@ -1,13 +1,14 @@
+
 # 🚔 Redriver 2 — Cheat Table v1.4.0
 
-> **A Cheat Engine table for Redriver 2, focused on police behavior, difficulty, and vehicle mechanics.**
+> **A Cheat Engine table for Redriver 2, focused on police behavior, pursuit mechanics, vehicle customization, and advanced game modifications.**
 
 ---
 
 ## ⚠️ Legal & Ethical Disclaimer
 
 - This cheat table is intended **for single-player use only**. It has no impact on any multiplayer or online system.
-- **Redriver 2 is a fan-made PC port** of the original Driver 2 (PS1), and is **no longer commercially sold**. This table does not interfere with any active commercial product.
+- **Redriver 2 is a fan-made PC port** of the original Driver 2 (PS1), and is no longer commercially sold. This table does not interfere with any active commercial product.
 - Use at your own risk. **Always back up your save files** before using any cheat table.
 - Partial credit goes to **MrSam** for his original cheat table, portions of which were reused and built upon in this project. Full respect to his work — see credits below.
 
@@ -30,139 +31,198 @@ Using an older or different build will likely cause the table to not work or beh
 Cheat Engine is required to load and use this table.
 
 > ⚠️ **Important warning about Cheat Engine installers:**
-> The official Cheat Engine installer **bundles adware** by default. During installation, you will be prompted to install unwanted third-party software — **always decline every optional offer**.
 >
-> 🔍 It is strongly recommended to look up how to safely download and install Cheat Engine before proceeding (e.g. using the standalone/portable version, or verifying the source). A quick search for *"how to install Cheat Engine safely"* will point you in the right direction.
+> The official Cheat Engine installer may bundle third-party offers. During installation, carefully review every step and decline any unwanted optional software.
+>
+> 🔍 It is strongly recommended to look up how to safely download and install Cheat Engine before proceeding (e.g. using the standalone/portable version, or verifying the source).
 >
 > **No direct link is provided here intentionally**, to encourage you to verify the source yourself.
 
 ---
 
-## ✨ Features — v1.1.0
+# ✨ Features — v1.4.0
+
+The v1.4.0 release introduces a **complete redesign of the cheat table**, with a new category-based organization, several new scripts, rewritten existing features, and an advanced custom police lighting system.
+
+The table is now divided into four main categories:
+
+- **Mr Sam's General Game Settings**
+- **Simple Scripts**
+- **Pursuit Scripts**
+- **Custom Scripts**
+
+---
+
+## ⚙️ Mr Sam's General Game Settings
+
+A collection of useful general game settings and quality-of-life modifications, designed to make gameplay adjustments easier and save time.
+
+This category is based on **MrSam's original cheat table**.
+
+> 🙏 Full credit to MrSam for this section and his original work.
+
+---
+
+## 🛠️ Simple Scripts
+
+A collection of standalone scripts providing additional control over vehicles, police behavior, and visual effects.
+
+### 🔇 Disable Cop Siren Sound for Player
+
+Disables police siren sounds for the player's vehicle.
+
+### 🚔 Spawn Player with Cop Handling
+
+Applies police vehicle characteristics to the player's vehicle, including:
+
+- Police hubcaps.
+- Police exhaust smoke behavior.
+- Police handling and physics.
+
+> ⚠️ **DEV FEATURE:** This script is still under development and may cause bugs during vehicle spawning. Use with caution.
+
+### 🚗 No Visual Damage on Pursuers
+
+Prevents pursuer vehicles from displaying visual damage, keeping police vehicles looking clean even during intense pursuits.
+
+### 🔍 Always High Level of Detail
+
+Forces vehicles to maintain a high level of visual detail.
+
+> ⚠️ Originally from MrSam's work. This script may cause game crashes. Use with caution.
+
+### 🔄 Reset Vehicles
+
+Resets vehicle slots **1–19** by setting their vehicle type to `0`.
+
+Useful for resetting vehicle slots and clearing unwanted vehicle configurations.
+
+---
+
+## 🚨 Pursuit Scripts
+
+Dedicated scripts for modifying police AI, pursuit behavior, police spawning, and overall difficulty.
 
 ### 🚗 All Vehicles Are Police Cars
-Every vehicle in the game is replaced by a police AI. Maximum chaos, maximum fun.
 
-Now with a **Vehicle Count** field — set a value between 0 and 18 to control exactly how many vehicles are affected. Timer and stability issues from v1.0.0 have been fixed.
+Completely rewritten for v1.4.0.
 
----
+This feature was already present in previous releases, but has now received a major code overhaul to improve reliability, stability, and flexibility.
 
-### 🚔 Be a Cop *(New in v1.1.0)*
-Take on the role of a police officer. Based on MrSam's cheat table code, this script includes a heavily modified version of "Pursuers Can Target Anyone":
+Features include:
 
-- No need to honk anymore — just hitting a vehicle triggers a pursuit
-- Works with all vehicle types except police (civilians and parked vehicles included); previously only moving vehicles were supported
-- Vehicles with 20,000+ damage cannot be targeted for pursuit
-- The player no longer needs to be in a police vehicle to trigger and conduct pursuits
-- Non-police vehicles with police AI (marked as Patrolling) can also join pursuits — combine with **🚗 All Vehicles Are Police Cars** to enable them
-- Player physics are replaced with police physics, and more
+- Rewritten and reorganized script structure.
+- Improved reliability.
+- Real-time adjustable variables.
+- Greater control over how many vehicles are affected.
+- Support for up to 19 vehicle slots.
 
----
+### 🎯 Cops Target Tanner
 
-### 😤 Maximum Aggressive Police Difficulty
-Sets police aggression to the highest possible value **just before** the threshold where their behavior breaks and they stop chasing you. The sweet spot for the most intense pursuit experience.
+Modifies police targeting behavior, making police officers specifically target Tanner.
 
----
+### 🎲 Random Cop Number and Spawn
+
+Randomizes police vehicle numbers and spawning behavior, making each pursuit less predictable.
 
 ### 🎲 Random Police Difficulty
-Randomizes police difficulty for unpredictable and varied pursuit intensity across sessions.
+
+Randomizes police difficulty to create varying pursuit intensity.
+
+### ⚡ Extreme Fast Cop Cheats
+
+A collection of extreme-speed police modifications designed to make pursuits significantly faster and more intense.
 
 ---
 
-### 👮 Aggressive On-Foot Police (PS1 Behavior)
-Restores the on-foot police aggression behavior from the original **PS1 version** of Driver 2, making cops far more aggressive when you're out of your vehicle.
+## 🎨 Custom Scripts
 
----
+Advanced custom modifications that go beyond standard cheat table functionality.
 
-### 🎲 Random Police Count & Spawn Rate
-Randomizes both the number of police units and their spawn rate, keeping every chase feeling fresh and different.
+### 🚨 Custom Light Animation System [GYRO]
 
----
+**A major custom system — developed over more than a month.**
 
-### 🎮 L2 / R2 Trigger Vehicle Control *(Pre-Alpha)*
-Enables using **L2 and R2 triggers** for vehicle control (acceleration/brake).
+GYRO is an advanced, highly customizable police lighting animation system, designed from the ground up to provide extensive control over emergency vehicle lighting.
 
-> ⚠️ **Pre-Alpha feature** — This was implemented as a proof-of-concept to test feasibility. It requires a **separate Python script that is not included** in this release and is not yet publicly available. **Do not expect this to work out of the box.** It will be properly developed and released in a future version.
+After more than a month of development, testing, and reliability improvements, the system can finally operate across **all 19 vehicle slots simultaneously**, without interfering with the lighting systems of other vehicles.
 
----
+**Main features:**
 
-### 🚔 Spawn as a Police Car (with Police Physics)
-Spawn your vehicle as a police car with full police physics applied:
-- No hubcap loss
-- No drift smoke
-- Behavior nearly identical to the in-game police AI vehicles
+- **19 simultaneous vehicles** — Independent lighting animations across all 19 vehicle slots.
+- **Independent RGB turn signals** — Fully customizable RGB lighting behavior.
+- **Custom night lights** — Dedicated night lighting behavior.
+- **Custom reverse lights** — Independent reverse light animations.
+- **Thousands of possible combinations** — A huge variety of lighting configurations.
+- **Dynamic animation patterns** — Lighting patterns are generated to avoid repeating the same combination twice.
+- **Independent light animations** — Every individual light element has its own animation.
+- **Vehicle-specific control** — Each vehicle maintains its own independent lighting behavior.
+
+Unlike a conventional police light toggle, GYRO provides a complete vehicle-specific animation system, allowing multiple vehicles to display completely different lighting behaviors at the same time.
+
+This is one of the biggest custom additions in v1.4.0.
+
+### 🚧 Toggle Vehicle v27 [Roadblock-Like]
+
+A custom system designed to reproduce the behavior of Roadblock vehicles, with additional customization and interaction possibilities.
+
+**What's new:**
+
+- Recreates Roadblock-like vehicle behavior.
+- Police vehicles can now both **trigger AND stop** the behavior.
+- New interaction possibilities between police vehicles.
+- Police vehicles can be stopped by physically touching them, depending on the configured behavior.
+
+This provides more control over police vehicle interactions and allows for more dynamic roadblock-like situations.
+
+### 👮 Be A Cop
+
+Take the role of a police officer and experience Redriver 2 from the perspective of law enforcement.
+
+This script builds upon the heavily modified pursuit system introduced in v1.1.0, with police-oriented behavior and player physics.
+
+> ⚠️ **IMPORTANT: PLEASE READ THE READ ME FILE BEFORE ACTIVATING THIS SCRIPT.**
+>
+> This feature modifies several gameplay systems. Make sure you understand its behavior and requirements before enabling it.
 
 ---
 
 ## 🙏 Credits
 
-- **MrSam & contributors** (SoapyMan, Fireboyd78, 50thomatoes50, andre-vm, Rosalie241, Faalagorn, alotlikebeans) — For the original Redriver2 project and cheat table. Portions of MrSam's work were reused in this table. Huge thanks. [OpenDriver2/REDRIVER2](https://github.com/OpenDriver2/REDRIVER2)
-- **Compatible build** available here: [redriver2-hipo-build](https://github.com/levraihipo-dot/redriver2-hipo-build)
+- **MrSam & contributors** (SoapyMan, Fireboyd78, 50thomatoes50, andre-vm, Rosalie241, Faalagorn, alotlikebeans) — For the original Redriver2 project and cheat table. Portions of MrSam's work were reused and built upon in this table. Huge thanks and respect for their work.
+- **OpenDriver2 / REDRIVER2 project:** [GitHub Repository](https://github.com/OpenDriver2/REDRIVER2)
+- **Compatible build:** [redriver2-hipo-build](https://github.com/levraihipo-dot/redriver2-hipo-build)
 
 ---
 
 ## 📜 Changelog
 
-Voici un changelog en anglais, dans le même style que tes versions précédentes, avec une présentation structurée et professionnelle pour la version 1.4.0.
+### v1.4.0
 
-Écriture
-
-# v1.4.0
-
-### Major Update — Complete Cheat Table Overhaul
-
-- **Complete Cheat Table Redesign** — The entire cheat table has been rebuilt and reorganized into dedicated categories for better navigation, clarity and usability.
-
-### Mr Sam's General Game Settings
-
-- **New Category: Mr Sam's General Game Settings** — Includes useful game settings and quality-of-life cheats designed to save time and improve the overall experience.
-  - Based on Mr Sam's original cheat table. Full credit to him for this section.
-
-### Simple Scripts
-
-- **New Category: Simple Scripts** — Several new standalone scripts have been added:
-  - **Disable Cop Siren Sound for Player** — Disables police siren sounds for the player's vehicle.
-  - **Spawn Player with Cop Handling** — Gives the player's vehicle police hubcaps, exhaust smoke and police handling/physics. _(DEV – May cause bugs during vehicle spawning.)_
-  - **No Visual Damage on Pursuers** — Prevents pursuer vehicles from displaying visual damage.
-  - **Always High Level of Detail** — Forces vehicles to maintain a high level of detail. _(From Mr Sam – May cause game crashes.)_
-  - **Reset Vehicles** — Resets vehicle slots 1–19 by setting their type to 0.
-
-### Pursuit Scripts
-
-- **All Vehicles Are Police Cars** — Completely rewritten and improved for increased reliability and stability. Now features real-time adjustable variables for greater control over the system.
-- **Cops Target Tanner** — New script that makes police officers specifically target Tanner.
-- **Random Cop Number and Spawn** — Randomizes police vehicle count and spawning behavior.
-- **Random Police Difficulty** — Randomizes police difficulty.
-- **Extreme Fast Cop Cheats** — New extreme-speed police cheats for a more intense pursuit experience.
-
-### Custom Scripts
-
-- **NEW: Custom Light Animation System \[GYRO\]** — An advanced, highly customizable police lighting system that took over a month of development, testing and optimization to finally achieve reliable operation.
-  - Supports all **19 vehicle slots simultaneously** without interfering with the lights of other vehicles.
-  - Independent RGB turn signals.
-  - Custom night lights and reverse lights.
-  - Thousands of possible lighting combinations.
-  - Never repeats the same lighting pattern twice.
-  - Every individual light element has its own independent animation, separately controlled for each vehicle.
-  - A fully independent, vehicle-specific lighting animation system.
-- **Toggle Vehicle v27 \[Roadblock-Like\]** — Recreates the behavior of Roadblock vehicles with additional customization options.
-  - Police vehicles can now both trigger AND stop the roadblock behavior.
-  - New interaction possibilities, including stopping a police vehicle by physically touching it.
-  - More control over police vehicle behavior and interactions.
-- **Be A Cop** — Take control of the police role and experience the game from the perspective of a police officer.
-  - **IMPORTANT: Please read the READ ME file before activating this script.**
-
+- **Major Update: Complete Cheat Table Overhaul** — Entire table redesigned and reorganized into four dedicated categories.
+- **New: Mr Sam's General Game Settings** — Integrated useful general game settings from MrSam's original cheat table.
+- **New: Simple Scripts Category** — Added Disable Cop Siren Sound for Player, Spawn Player with Cop Handling, No Visual Damage on Pursuers, Always High Level of Detail, and Reset Vehicles.
+- **Updated: All Vehicles Are Police Cars** — Completely rewritten for improved reliability, with real-time adjustable variables and support for up to 19 vehicle slots.
+- **New: Cops Target Tanner** — Police targeting modification.
+- **New: Random Cop Number and Spawn** — Randomized police count and spawning.
+- **Updated: Random Police Difficulty** — Included in the new Pursuit Scripts category.
+- **New: Extreme Fast Cop Cheats** — Extreme-speed police modifications.
+- **New: Custom Light Animation System [GYRO]** — Advanced independent RGB lighting animations, night lights, reverse lights, and thousands of possible combinations. Supports all 19 vehicle slots simultaneously without interfering with other vehicles.
+- **Updated: Toggle Vehicle v27 [Roadblock-Like]** — Expanded roadblock-like behavior, including the ability for police vehicles to trigger and stop the behavior.
+- **Updated: Be A Cop** — Included in the new Custom Scripts category. Read the README before activation.
 
 ### v1.1.0
-- **New: Be a Cop mode** — Take the role of a police officer with a heavily modified pursuit system (based on MrSam's code). Supports all vehicle types, damage thresholds, no horn required, police physics for the player, and compatibility with All Vehicles Are Police Cars
-- **Updated: All Vehicles Are Police Cars** — Fixed timer duplication bug that caused crashes; script restructured for clarity; added **Vehicle Count** variable field (0–18) to control how many vehicles are affected
+
+- **New: Be a Cop mode** — Take the role of a police officer with a heavily modified pursuit system (based on MrSam's code). Supports all vehicle types, damage thresholds, no horn required, police physics for the player, and compatibility with All Vehicles Are Police Cars.
+- **Updated: All Vehicles Are Police Cars** — Fixed timer duplication bug that caused crashes; script restructured for clarity; added **Vehicle Count** variable field (0–18) to control how many vehicles are affected.
 
 ### v1.0.0
-- Initial release
-- All Vehicles Are Police Cars
-- Maximum Aggressive Police Difficulty
-- Random Police Difficulty
-- Aggressive On-Foot Police (PS1 behavior)
-- Random Police Count & Spawn Rate
-- L2/R2 Trigger Control (pre-alpha, requires external Python script)
-- Spawn as Police Car with Police Physics
+
+- Initial release.
+- All Vehicles Are Police Cars.
+- Maximum Aggressive Police Difficulty.
+- Random Police Difficulty.
+- Aggressive On-Foot Police (PS1 behavior).
+- Random Police Count & Spawn Rate.
+- L2/R2 Trigger Control (pre-alpha, requires external Python script).
+- Spawn as Police Car with Police Physics.
